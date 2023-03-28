@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<templates id="blog" xml:space="preserve">
+    <t t-name="latest_blog.latest_blog_template">
+        <div class="p-5 bg-image" style="background-image:url('https://hindime.net/wp-content/uploads/2019/06/blog-kaise-banaye.jpg')">
+            <div class="row">
+                <div class="col-md-12">
+                    <center>
+                        <u><h2>Latest Blogs</h2></u>
+                        <br/><br/>
+                    </center>
+                    <center>
+                        <div class="row">
+                            <t t-foreach='name' t-as="blogs">
+                                <div class="card col1" style="width:18rem; max-width=18px">
+                                    <a t-attf-href="/blog/{{blogs[3]}}/{{blogs[2]}}">
+                                        <img class="card-img-top"
+                                             t-attf-src="/website_blog/static/src/img/cover_{{blogs[1]}}.jpg"/>
+                                        <div class="card-body">
+                                            <span t-esc="blogs[0]"></span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </t>
+                        </div>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </t>
+</templates>

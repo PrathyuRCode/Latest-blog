@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <template id="blog_template_id" name="Latest Blogs">
+        <section class="container dynamic_snippet_blog">
+            <div class="qweb_blog">
+
+            </div>
+        </section>
+    </template>
+</odoo>
